@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Launch Sites</title>
+</head>
+<body>
+<h1>Launch Sites</h1>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Launch Attempts</th>
+    </thead>
+    <tbody>
+        {% for launchSite in launchSiteData %}
+        <tr>
+            <td>{{ launchSite.name }}</td>
+            <td>{{ launchSite.launchAttempts }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="/">Launches</a>
+</body>
+</html>

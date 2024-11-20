@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Launches</title>
+</head>
+<body>
+<h1>Launches</h1>
+<table>
+    <thead>
+        <th>Year</th>
+        <th>Successful Landings</th>
+    </thead>
+    <tbody>
+        {% for launchpad in launchpadData %}
+        <tr>
+            <td>{{ launchpad.year }}</td>
+            <td>{{ launchpad.successfulLandings }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="/launch-sites">Launch sites</a>
+</body>
+</html>
